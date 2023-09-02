@@ -1,0 +1,23 @@
+---
+const links = [
+  { text: "Home", href: "/" },
+  { text: "About", href: "/about" },
+  { text: "Contact", href: "/contact" },
+];
+---
+
+<footer class="bg-gray-900 text-gray-300 py-8">
+  <div class="container mx-auto flex flex-col items-center">
+    <nav class="mb-4">
+      <ul class="flex space-x-6">
+        <li><a href="/" class="hover:text-white">Home</a></li>
+        <li><a href="/about" class="hover:text-white">About</a></li>
+        <li><a href="/services" class="hover:text-white">Services</a></li>
+        <li><a href="/contact" class="hover:text-white">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="text-center text-sm">
+      &copy; 2023 Isaac Fimbres. All rights reserved. | <a href="/privacy" class="hover:text-white">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
