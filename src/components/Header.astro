@@ -1,0 +1,22 @@
+---
+const links = [
+  { text: "Home", href: "/" },
+  { text: "About", href: "/about" },
+  { text: "Contact", href: "/contact" },
+];
+---
+
+<header class="bg-blue-800 py-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-white text-2xl font-semibold">
+      <a href="/">Isaac Fimbres</a>
+    </div>
+    <nav class="space-x-4">
+      {links.map((link) => (
+        <a href={link.href} class="text-white hover:underline">
+          {link.text}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
