@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Layout.astro';
+import ProfileImage from '../../public/profile.jpeg';
+---
+
+<Layout title="About Me">
+  <section class="px-5 py-8">
+		<Image src={ProfileImage} alt="Profile Image" class="aspect-square mx-auto rounded-full w-72" width={700} height={700} transition:name="profile" />
+    <h1 class="text-7xl font-extrabold text-center pt-12" transition:name="legend">I'm Isaac Fimbres</h1>
+    <p class="prose prose-2xl text-xl text-zinc-600 pt-10 pb-12 w-[600px] mx-auto">
+      I'm Isaac, a software engineer working at IBM, one of the most important technology companies in the world. I love web and mobile development using React and React Native, but currently I'm interested in doing a transition to artifitial intelligence, focusing in machine learning with Python.
+    </p>
+  </section>
+</Layout>
