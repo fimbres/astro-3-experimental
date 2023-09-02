@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Layout.astro';
+import ProfileImage from '../../public/profile.jpeg';
+---
+
+<Layout title="Contact Me">
+  <section class="px-5 py-8">
+		<div class="w-fit mx-auto flex jusitfy-center items-end">
+      <h1 class="text-xl sm:text-7xl font-extrabold text-center pt-12" transition:name="legend">Contact Me!</h1>
+      <Image src={ProfileImage} alt="Profile Image" class="aspect-square rounded-full w-14 ml-4 mb-2" width={700} height={700} transition:name="profile" />
+    </div>
+    <p class="prose prose-2xl text-xl overflow-visible text-zinc-600 pt-10 pb-12 w-[600px] mx-auto">
+      Feel free to drop me a message to <span class="text-blue-700 underline cursor-pointer">test@fimbres.com</span>, and I'll get back to you as soon as possible. Let's collaborate and turn your software vision into reality!
+    </p>
+  </section>
+</Layout>
